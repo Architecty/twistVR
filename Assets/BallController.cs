@@ -20,11 +20,11 @@ public class BallController : MonoBehaviour {
     }
 
     if (Input.GetKey(KeyCode.LeftArrow)) {
-      _rigidbody.AddTorque(new Vector3(0f, 1f, 0f) * power);
+      _rigidbody.AddTorque(new Vector3(0f, 0f, 1f) * power);
     }
 
     if (Input.GetKey(KeyCode.RightArrow)) {
-      _rigidbody.AddTorque(new Vector3(0f, -1f, 0f) * power);
+      _rigidbody.AddTorque(new Vector3(0f, 0f, -1f) * power);
     }
   }
 }
